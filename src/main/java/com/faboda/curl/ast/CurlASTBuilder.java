@@ -53,7 +53,7 @@ public class CurlASTBuilder {
                 String header = curlTokens.get(i).substring(3);
                 String[] parts = header.split(":");
                 if (parts.length == 2) {
-                    headers.put(parts[0], parts[1]);
+                    headers.put(parts[0], parts[1].replace("'", ""));
                 }
             }
         }

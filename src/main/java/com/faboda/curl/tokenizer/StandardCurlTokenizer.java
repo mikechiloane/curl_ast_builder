@@ -9,7 +9,7 @@ public class StandardCurlTokenizer implements CurlTokenizer {
 
     private List<String> tokens;
 
-    public StandardCurlTokenizer(String curlCommand){
+    public StandardCurlTokenizer(String curlCommand) {
         tokens = new ArrayList<>();
         tokenize(curlCommand);
     }
